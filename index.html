@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أعمال ليلة الثالثة والعشرين - ليلة القدر الكبرى</title>
+    <meta name="description"
+        content="دليل كامل وشامل لأعمال ليلة الثالثة والعشرين من شهر رمضان المبارك (ليلة القدر) مع النصوص الكاملة ومقاطع الفيديو التوضيحية.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Noto+Kufi+Arabic:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="stars-container" id="stars"></div>
+
+    <header>
+        <nav class="glass-nav">
+            <div class="logo">ليلة القدر</div>
+            <ul class="nav-links">
+                <li><a href="#hero">البداية</a></li>
+                <li><a href="#deeds">الأعمال</a></li>
+                <li><a href="#footer">الختام</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section-spacing">
+            <div class="hero-content">
+                <h1 class="fade-in">ليلة الثالثة والعشرين</h1>
+                <p class="subtitle fade-in-delay">أعظم ليالي القدر المباركة</p>
+            </div>
+        </section>
+
+        <!-- Main Deeds Section -->
+        <div id="deeds" class="stepper-container">
+
+            <!-- 1. Ghusl -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="ghusl">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">1. الغسل</h2>
+                </label>
+                <p>يستحب الغسل مرتين: عند الغروب، وفي آخر الليل.</p>
+            </section>
+
+            <!-- 2. Prayer 7x Ikhlas -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="prayer-7">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">2. صلاة ركعتين</h2>
+                </label>
+                <p>تقرأ في كل ركعة بعد الحمد سورة الإخلاص (7 مرات)، وتقول بعد الفراغ (70 مرة): "أستغفر الله وأتوب إليه".
+                </p>
+            </section>
+
+            <!-- 3. Noble Surahs (Tabbed) -->
+            <section class="content-step glass">
+                <h2 class="section-title-alt">3. السور الكريمة</h2>
+
+                <div class="tabs-menu">
+                    <button class="tab-btn active" onclick="showTab(event, 'ankabut-tab')">سورة العنكبوت</button>
+                    <button class="tab-btn" onclick="showTab(event, 'rum-tab')">سورة الروم</button>
+                    <button class="tab-btn" onclick="showTab(event, 'dukhan-tab')">سورة الدخان</button>
+                </div>
+
+                <div id="ankabut-tab" class="tab-content active">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/IOWPmHSVRrI" title="سورة العنكبوت" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <label class="checkbox-container">
+                        <input type="checkbox" data-id="read-ankabut">
+                        <span class="checkmark"></span>
+                        <p>قمت بقراءة سورة العنكبوت</p>
+                    </label>
+                    <div class="surah-full-text glass">
+                        <p class="quran-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. الٓمٓ (1) أَحَسِبَ ٱلنَّاسُ أَن
+                            يُتۡرَكُوٓاْ أَن يَقُولُوٓاْ ءَامَنَّا وَهُمۡ لَا يُفۡتَنُونَ (2) وَلَقَدۡ فَتَنَّا
+                            ٱلَّذِينَ مِن قَبۡلِهِمۡۖ فَلَيَعۡلَمَنَّ ٱللَّهُ ٱلَّذِينَ صَدَقُواْ وَلَيَعۡلَمَنَّ
+                            ٱلۡكَٰذِبِينَ (3)... (إلى آخره من النص المبارك)</p>
+                    </div>
+                </div>
+
+                <div id="rum-tab" class="tab-content">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/dB1XUz-fbiU" title="سورة الروم" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <label class="checkbox-container">
+                        <input type="checkbox" data-id="read-rum">
+                        <span class="checkmark"></span>
+                        <p>قمت بقراءة سورة الروم</p>
+                    </label>
+                    <div class="surah-full-text glass">
+                        <p class="quran-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. الٓمٓ (1) غُلِبَتِ ٱلرُّومُ (2)
+                            فِيٓ أَدۡنَى ٱلۡأَرۡضِ وَهُم مِّنۢ بَعۡدِ غَلَبِهِمۡ سَيَغۡلِبُونَ (3)... (إلى آخره من النص
+                            المبارك)</p>
+                    </div>
+                </div>
+
+                <div id="dukhan-tab" class="tab-content">
+                    <div class="video-embed">
+                        <iframe src="https://www.youtube.com/embed/sZgU9BaLflQ" title="سورة الدخان" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                    <label class="checkbox-container">
+                        <input type="checkbox" data-id="read-dukhan">
+                        <span class="checkmark"></span>
+                        <p>قمت بقراءة سورة الدخان</p>
+                    </label>
+                    <div class="surah-full-text glass">
+                        <p class="quran-text">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. حم (1) وَٱلۡكِتَٰبِ ٱلۡمُبِينِ (2)
+                            إِنَّآ أَنزَلۡنَٰهُ فِي لَيۡلَةٖ مُّبَٰرَكَةٍۚ إِنَّا كُنَّا مُنذِرِينَ (3)... (إلى آخره من
+                            النص المبارك)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Dua al-Mushaf -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="quran-head">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">4. وضع المصحف على الرأس</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/55RgmMAO0YM" title="دعاء رفع المصاحف" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="dua-full-text glass p-4">
+                    <p class="dua-text mb-4">"اللَّهُمَّ بِحَقِّ هَذَا الْقُرْآنِ، وَ بِحَقِّ مَنْ أَرْسَلْتَهُ بِهِ، وَ
+                        بِحَقِّ كُلِّ مُؤْمِنٍ مَدَحْتَهُ فِيهِ، وَ بِحَقِّكَ عَلَيْهِمْ، فَلَا أَحَدَ أَعْرَفُ
+                        بِحَقِّكَ مِنْكَ"</p>
+                    <div class="names-list">
+                        <p class="name-item">بِكَ يَا اللَّهُ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِمُحَمَّدٍ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِعَلِيٍّ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِفَاطِمَةَ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِالْحَسَنِ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِالْحُسَيْنِ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِعَلِيِّ بْنِ الْحُسَيْنِ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِمُحَمَّدِ بْنِ عَلِيٍّ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِجَعْفَرِ بْنِ مُحَمَّدٍ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِمُوسَى بْنِ جَعْفَرٍ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِعَلِيِّ بْنِ مُوسَى <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِمُحَمَّدِ بْنِ عَلِيٍّ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِعَلِيِّ بْنِ مُحَمَّدٍ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِالْحَسَنِ بْنِ عَلِيٍّ <span class="count">(10 مرات)</span></p>
+                        <p class="name-item">بِالْحُجَّةِ <span class="count">(10 مرات)</span></p>
+                    </div>
+                    <p class="dua-hint mt-3">ثم تسأل حاجتك فإنها تقضى إن شاء الله.</p>
+                </div>
+            </section>
+
+            <!-- 5. Dua Al-Faraj -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-faraj">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">5. دعاء الفرج (اللهم كن لوليك...)</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/Uo0a-giAYHQ" title="دعاء الفرج" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text">"اللَّهُمَّ كُنْ لِوَلِيِّكَ الْحُجَّةِ بْنِ الْحَسَنِ صَلَواتُكَ عَلَيْهِ
+                        وَعَلى آبائِه فِي هذِهِ السَّاعَةِ وَفِي كُلِّ ساعَةٍ وَلِيّاً وَحافِظاً وَقائِداً وَناصِراً
+                        وَدَلِيلاً وَعَيْناً حَتّى تُسْكِنَهُ أَرْضَكَ طَوْعاً وَتُمَتِّعَهُ فِيها طَوِيلاً."</p>
+                </div>
+            </section>
+
+            <!-- 6. Dua Imdud li... -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-imdud">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">6. دعاء اللهم امدد لي في عمري</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/6v7u6oNa1Ik" title="دعاء اللهم امدد لي في عمري"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text"> اَللّـهُمَّ امْدُدْ لي في عُمْري، وَاَوْسِعْ لي في رِزْقي، وَاَصِحَّ لي جِسْمي،
+                        وَبَلِّغْني اَمَلي، وَاِنْ كُنْتُ مِنَ الاَْشْقِياءِ فَاْمُحني مِنَ الاَْشْقِياءِ، وَاْكتُبْني
+                        مِنَ السُّعَداءِ، فَاِنَّكَ قُلْتَ في كِتابِكَ الْمُنْزَلِ عَلى نَبِيِّكَ الْمُرْسَلِ صَلَوتُكَ
+                        عَلَيْهِ وَآلِهِ: ﴿يَمْحُو اللهُ ما يَشاءُ وَيُثْبِتُ وَعِنْدَهُ اُمُّ الْكِتابِ﴾.</p>
+                </div>
+            </section>
+
+            <!-- 7. Dua Aj'al... -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-aj'al">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">7. دعاء اللهم أجعل فيما تقضي وتقدّر</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/nU_LJcgEBsw" title="دعاء اللهم أجعل فيما تقضي"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text"> اللَّهُمَّ اجْعَلْ فِيْما تَقْضِي وَفِيما تُقَدِّرُ مِنَ الاَمْرِ المَحْتُومِ
+                        وَفِيما تَفْرُقُ مِنَ الاَمْرِ الحَكِيمِ فِي لَيْلَةِ القَدْرِ مِنَ القَضاء الَّذِي لا يُرَدُّ
+                        وَلا يُبَدَّلُ أَنْ تَكْتُبَنِي مِنْ حُجَّاجِ بَيْتِكَ الحَرامِ فِي عامِي هذا المَبْرُورِ
+                        حَجُّهُمُ ، المَشْكُورِ سَعْيُهُمُ ، المَغْفُورِ ذُنُوبُهُمُ ، المُكَفَّرُ عَنْهُمْ
+                        سَيِّئاتُهُمْ ، وَاجْعَلْ فِيْما تَقْضِي وَتُقَدِّرُ أَنْ تُطِيلَ عُمْرِي ، وَتُوَسِّعَ لِي فِي
+                        رِزْقِي .</p>
+                </div>
+            </section>
+
+            <!-- 8. Dua Ya Batinan... -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-batin">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">8. دعاء يا باطناً في ظهوره</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/yoctgVu3xek" title="دعاء يا باطناً في ظهوره"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text">"يا بَاطِناً فِي ظُهُورِهِ، وَيا ظاهِراً فِي بُطُونِهِ، وَيا بَاطِناً لَيْسَ
+                        يَخْفى، وَيا ظاهِراً لَيْسَ يُرى... سُبْحانَ مَنْ هُوَ هكَذا وَلا هكَذا غَيْرُهُ."</p>
+                    <p class="dua-hint">ثم تدعو بما تَشــــــــــــــاء .</p>
+                </div>
+            </section>
+
+            <!-- 9. Dua Ya Rabb Laylat al-Qadr -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-ya-rabb">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">9. دعاء يا رب ليلة القدر</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/62j16e0xnB0" title="دعاء يا رب ليلة القدر"
+                        frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text">"يَا رَبِّ لَيْلَةَ الْقَدْرِ، وَجَاهُ لَيْلَةِ الْقَدْرِ، وَفَضْلُ لَيْلَةِ
+                        الْقَدْرِ، وَنُورُ لَيْلَةِ الْقَدْرِ، وَبَرَكَةُ لَيْلَةِ الْقَدْرِ، وَعِتْقُ رِقَابِنَا مِنْ
+                        النَّارِ فِي لَيْلَةِ الْقَدْرِ، يَا مَنْ لَا يُحْصَى كَرَمُهُ، وَلَا يُبْلَغُ مَنْزِلَتُهُ،
+                        وَلَا يُدْرَكُ عُمْقُهُ، وَلَا تُحَدُّ قُدْرَتُهُ، وَلَا تُوصَفُ عَظَمَتُهُ، وَلَا تُدْرَكُ
+                        كُنْهُ حِكْمَتِهِ، وَلَا تُحَاُط بِهِ الْعُقُولُ."</p>
+                </div>
+            </section>
+
+            <!-- 10. Dua Ya Mudabbir al-Umur -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-mudabbir">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">10. دعاء يا مدبر الأمور</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe src="https://www.youtube.com/embed/QSS4VWwOwcg" title="دعاء يا مدبر الأمور" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <p class="dua-text">"يا مُدَبِّرَ الاُمورِ، يا باعِثَ مَنْ فِي القُبورِ، يا مُجْرِيَ البُحورِ يا
+                        مُلَيِّنَ الحَديدِ لِداوُدَ صَلِّ عَلى مُحَمَّدٍ وَآلِ مُحَمَّدٍ وَافْعَلْ بِي كَذا وَكَذا"</p>
+                    <p class="dua-hint">(وتطلب حاجتك)</p>
+                </div>
+            </section>
+
+            <!-- 11. Ziyarat Al-Hussain -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="ziyarat-hussain">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">11. زيارة الإمام الحسين (ع)</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1yc6NV1bylk?si=vX9y263FUOr-s2k2"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <div id="ziyarat-wrapper" class="truncation-wrapper"
+                        onclick="toggleContent('ziyarat-full', 'ziyarat-preview', this)">
+                        <div id="ziyarat-preview" class="dua-text dua-preview">
+                            "السَّلامُ عَلَيْكَ يا بْنَ رَسُولِ اللهِ، السَّلامُ عَلَيْكَ يا بْنَ أَمِيرِ المُؤْمِنِينَ،
+                            السَّلامُ عَلَيْكَ يا بْنَ الصِّدِّيقَةِ الطَّاهِرَةِ فاطِمَةَ سَيِّدَةِ نِساءِ العالَمِينَ،
+                            السَّلامُ عَلَيْكَ يا مَوْلايَ يا أبا عَبْدِ الله..."
+                            <span class="read-more-link">إقرأ المزيد</span>
+                        </div>
+                        <div id="ziyarat-full" class="surah-full-text hidden mt-3">
+                            <p class="dua-text small text-right">
+                                "السَّلامُ عَلَيْكَ يا بْنَ رَسُولِ اللهِ، السَّلامُ عَلَيْكَ يا بْنَ أَمِيرِ
+                                المُؤْمِنِينَ، السَّلامُ عَلَيْكَ يا بْنَ الصِّدِّيقَةِ الطَّاهِرَةِ فاطِمَةَ سَيِّدَةِ
+                                نِساءِ العالَمِينَ، السَّلامُ عَلَيْكَ يا مَوْلايَ يا أبا عَبْدِ الله وَرَحْمَةُ الله
+                                وَبَرَكاتُهُ..."
+                                <br><br>
+                                أَشْهَدُ أَنَّكَ قَدْ أَقَمْتَ الصَّلاةَ وَآتَيْتَ الزَّكاةَ وَأَمَرْتَ بِالمَعْرُوفِ
+                                وَنَهَيْتَ عَنِ المُنْكَرِ وَتَلَوْتَ الكِتابَ حَقَّ تِلاوَتِهِ وَجاهَدْتَ فِي الله
+                                حَقَّ جِهادِهِ وَصَبَرْتَ عَلى الاَذى فِي جَنْبِهِ مُحْتَسِباً حَتّى أَتاكَ اليَقِينُ...
+                            </p>
+                            <button class="btn-primary" style="margin-top: 20px;">إخفاء النص</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12. Dua Abi Hamza al-Thumali -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-abi-hamza">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">12. دعاء أبي حمزة الثمالي</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iZ9yxcJmToU?si=cdQwgxV5tvTm-bBw"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <div id="abi-hamza-wrapper" class="truncation-wrapper"
+                        onclick="toggleContent('abi-hamza-full', 'abi-hamza-preview', this)">
+                        <div id="abi-hamza-preview" class="dua-text dua-preview">
+                            إِلهِي لا تُؤَدِّبْنِي بِعُقُوبَتِكَ، وَلا تَمْكُرْ بِي فِي حِيلَتِكَ، مِنْ أَيْنَ لِيَ
+                            الْخَيْرُ يا رَبِّ وَلا يُوجَدُ إِلَّا مِنْ عِنْدِكَ، وَمِنْ أَيْنَ لِيَ النَّجاةُ وَلا
+                            تُسْتَطاعُ إِلَّا بِكَ...
+                            <span class="read-more-link">إقرأ المزيد</span>
+                        </div>
+                        <div id="abi-hamza-full" class="surah-full-text hidden mt-3">
+                            <p class="dua-text small text-right">
+                                إلهي لا تؤدبني بعقوبتك، ولا تمكر بي في حيلتك. من أين لي الخير يا رب ولا يوجد إلا من
+                                عندك، ومن أين لي النجاة ولا تستطاع إلا بك. لا الذي أحسن استغنى عن عونك ورحمتك، ولا الذي
+                                أساء واجترا عليك ولم يرضك خرج عن قدرتك. يا رب يا رب يا رب (حتى ينقطع النفس). بك عرفتك،
+                                وأنت دللتني عليك ودعوتني إليك، ولولا أنت لم أدر ما أنت.
+                                <br><br>
+                                الحمد لله الذي أدعوه فيجيبني وإن كنت بطيئا حين يدعوني، والحمد لله الذي أسأله فيعطيني وإن
+                                كنت بخيلا حين يستقرضني، والحمد لله الذي أناديه كلما شئت لحاجتي، وأخلو به حيث شئت لسري
+                                بغير شفيع فيقضي لي حاجتي. الحمد لله الذي لا أدعو غيره ولو دعوت غيره لم يستجب لي دعائي،
+                                والحمد لله الذي لا أرجو غيره ولو رجوت غيره لأخلف رجائي، والحمد لله الذي وكلني إليه
+                                فأكرمني ولم يكلني إلى الناس فيهينوني، والحمد لله الذي تحبب إلي وهو غني عني، والحمد لله
+                                الذي يحلم عني حتى كأني لا ذنب لي، فربي أحمد شيء عندي وأحق بحمدي.
+                                <br><br>
+                                اللهم إني أجد سبل المطالب إليك مشرعة، ومناهل الرجاء إليك مترعة، والاستعانة بفضلك لمن
+                                أملك مباحة، وأبواب الدعاء إليك للصادقين مفتوحة، وأعلم أنك للراجين بموضع إجابة،
+                                وللملهوفين بمرصد إغاثة، وأن في اللهف إلى جودك والرضا بقضائك عوضا من منع الباخلين،
+                                ومندوحة عما في أيدي المستأثرين، وأن الراحل إليك قريب المسافة، وأنك لا تحتجب عن خلقك إلا
+                                أن تحجبهم الأعمال دونك. وقد قصدت إليك بطلبتي، وتوجهت إليك بحاجتي، وجعلت بك استغاثتي
+                                وبدعائك توسلي، من غير استحقاق لاستماعك مني، ولا استيجاب لعفوك عني، بل لثقتي بكرمك،
+                                وسكوني إلى صدق وعدك، ولجائي إلى الإيمان بتوحيدك، ويقيني بمعرفتك مني أن لا رب لي غيرك ولا
+                                إله إلا أنت وحدك لا شريك لك.
+                                <br><br>
+                                اللهم أنت القائل وقولك حق، ووعدك صدق: ﴿واسألوا الله من فضله إن الله كان بكم رحيما﴾، وليس
+                                من صفاتك يا سيدي أن تأمر بالسؤال وتمنع العطية، وأنت المنان بالعطيات على أهل مملكتك،
+                                والعائد عليهم بتحنن رأفتك.
+                                <br><br>
+                                إلهي ربيتني في نعمك وإحسانك صغيرا، ونوهت باسمي كبيرا، فيا من رباني في الدنيا بإحسانه
+                                وتفضله ونعمه، وأشار لي في الآخرة إلى عفوه وكرمه. معرفتي يا مولاي دليلي عليك وحبي لك
+                                شفيعي إليك، وأنا واثق من دليلي بدلالتك، وساكن من شفيعي إلى شفاعتك. أدعوك يا سيدي بلسان
+                                قد أخرسه ذنبه، رب أناجيك بقلب قد أوبقه جرمه، أدعوك يا رب راهبا راغبا، راجيا خائفا. إذا
+                                رأيت مولاي ذنوبي فزعت، وإذا رأيت كرمك طمعت، فإن عفوت فخير راحم، وإن عذبت فغير ظالم.
+                                <br><br>
+                                أنت المحسن ونحن المسيؤون، فتجاوز يا رب عن قبيح ما عندنا بجميل ما عندك، وأي جهل يا رب لا
+                                يسعه جودك، أو أي زمان أطول من أناتك، وما قدر أعمالنا في جنب نعمك، وكيف نستكثر أعمالا
+                                نقابل بها كرمك، بل كيف يضيق على المذنبين ما وسعهم من رحمتك.
+                                <br><br>
+                                ... (يستمر الدعاء المبارك)
+                                <br><br>
+                                يا خير من دعاه داع، وأفضل من رجاه راج. اللهم أعطني سؤلي وأوسع علي في رزقي، واجعل لي من
+                                أمري فرجا ومخرجا، وارزقني من حيث أحتسب ومن حيث لا أحتسب.
+                            </p>
+                            <button class="btn-primary" style="margin-top: 20px;">إخفاء النص</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 13. Dua al-Tawba -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-tawba">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">13. دعاء التوبة (الصحيفة السجادية)</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NnIF4MNLJ5U?si=eQJJsN9Cpz7RYHu6"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <div id="tawba-wrapper" class="truncation-wrapper"
+                        onclick="toggleContent('tawba-full', 'tawba-preview', this)">
+                        <div id="tawba-preview" class="dua-text dua-preview">
+                            اللَّهُمَّ يَا مَنْ لَا يَصِفُهُ نَعْتُ الْوَاصِفِينَ، وَيَا مَنْ لَا يُجَاوِزُهُ رَجَاءُ
+                            الرَّاجِينَ، وَيَا مَنْ لَا يَضِيعُ لَدَيْهِ أَجْرُ الْمُحْسِنِينَ، هَذَا مَقَامُ مَنْ
+                            تَدَاوَلَتْهُ أَيْدِي الذُّنُوبِ...
+                            <span class="read-more-link">إقرأ المزيد</span>
+                        </div>
+                        <div id="tawba-full" class="surah-full-text hidden mt-3">
+                            <p class="dua-text small text-right">
+                                اللَّهُمَّ يَا مَنْ لَا يَصِفُهُ نَعْتُ الْوَاصِفِينَ، وَيَا مَنْ لَا يُجَاوِزُهُ
+                                رَجَاءُ الرَّاجِينَ، وَيَا مَنْ لَا يَضِيعُ لَدَيْهِ أَجْرُ الْمُحْسِنِينَ، وَيَا مَنْ
+                                هُوَ مُنْتَهَى خَوْفِ الْعَابِدِينَ، وَيَا مَنْ هُوَ غَايَةُ خَشْيَةِ الْمُتَّقِينَ...
+                                <br><br>
+                                هَذَا مَقَامُ مَنْ تَدَاوَلَتْهُ أَيْدِي الذُّنُوبِ، وَقَادَتْهُ أَزِمَّةُ الْخَطَايَا،
+                                وَاسْتَحْوَذَ عَلَيْهِ الشَّيْطَانُ، فَقَصَّرَ عَمَّا أَمَرْتَ بِهِ تَفْرِيطًا،
+                                وَتَعَاطَى مَا نَهَيْتَ عَنْهُ تَغْرِيرًا، كَالْجَاهِلِ بِقُدْرَتِكَ عَلَيْهِ، أَوْ
+                                كَالْمُنْكِرِ فَضْلَ إِحْسَانِكَ إِلَيْهِ...
+                                <br><br>
+                                حَتَّى إِذَا انْفَتَحَ لَهُ بَصَرُ الْهُدَى، وَتَقَشَّعَتْ عَنْهُ سَحَائِبُ الْعَمَى،
+                                أَحْصَى مَا ظَلَمَ بِهِ نَفْسَهُ، وَفَكَّرَ فِيمَا خَالَفَ بِهِ رَبَّهُ، فَرَأَى كَبِيرَ
+                                عِصْيَانِهِ كَبِيرًا، وَجَلِيلَ مُخَالَفَتِهِ جَلِيلًا...
+                                <br><br>
+                                فَأَقْبَلَ نَحْوَكَ مُؤَمِّلًا لَكَ، مُسْتَحْيِيًا مِنْكَ، وَوَجَّهَ رَغْبَتَهُ إِلَيْكَ
+                                ثِقَةً بِكَ، فَأَمَّكَ بِطَمَعِهِ يَقِينًا، وَقَصَدَكَ بِخَوْفِهِ إِخْلَاصًا...
+                                <br><br>
+                                اللَّهُمَّ فَتَقَبَّلْ تَوْبَتِي، وَلَا تُرْجِعْنِي مَرْجِعَ الْخَيْبَةِ مِنْ
+                                رَحْمَتِكَ، إِنَّكَ أَنْتَ التَّوَّابُ عَلَى الْمُذْنِبِينَ، وَالرَّحِيمُ لِلْخَاطِئِينَ
+                                الْمُنِيبِينَ.
+                            </p>
+                            <button class="btn-primary" style="margin-top: 20px;">إخفاء النص</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 14. Dua Makarim al-Akhlaq -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-makarim">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">14. دعاء مكارم الأخلاق (الصحيفة السجادية)</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/e7ZdLymqNaE"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <div id="makarim-wrapper" class="truncation-wrapper"
+                        onclick="toggleContent('makarim-full', 'makarim-preview', this)">
+                        <div id="makarim-preview" class="dua-text dua-preview">
+                            اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ آلِهِ، وَ بَلِّغْ بِإِيمَانِي أَكْمَلَ الْإِيمَانِ، وَ
+                            اجْعَلْ يَقِينِي أَفْضَلَ الْيَقِينِ، وَ انْتَهِ بِنِيَّتِي إِلَى أَحْسَنِ النِّيَّاتِ، وَ
+                            بِعَمَلِي إِلَى أَحْسَنِ الْأَعْمَالِ...
+                            <span class="read-more-link">إقرأ المزيد</span>
+                        </div>
+                        <div id="makarim-full" class="surah-full-text hidden mt-3">
+                            <p class="dua-text small text-right">
+                                اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ آلِهِ، وَ بَلِّغْ بِإِيمَانِي أَكْمَلَ الْإِيمَانِ،
+                                وَ اجْعَلْ يَقِينِي أَفْضَلَ الْيَقِينِ، وَ انْتَهِ بِنِيَّتِي إِلَى أَحْسَنِ
+                                النِّيَّاتِ، وَ بِعَمَلِي إِلَى أَحْسَنِ الْأَعْمَالِ.
+                                <br><br>
+                                اللَّهُمَّ وَفِّرْ بِلُطْفِكَ نِيَّتِي، وَ صَحِّحْ بِمَا عِنْدَكَ يَقِينِي، وَ
+                                اسْتَصْلِحْ بِقُدْرَتِكَ مَا فَسَدَ مِنِّي.
+                                <br><br>
+                                اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ آلِهِ، وَ اكْفِنِي مَا يَشْغَلُنِي الِاهْتِمَامُ
+                                بِهِ، وَ اسْتَعْمِلْنِي بِمَا تَسْأَلُنِي غَداً عَنْهُ، وَ اسْتَفْرِغْ أَيَّامِي فِيمَا
+                                خَلَقْتَنِي لَهُ، وَ أَغْنِنِي وَ أَوْسِعْ عَلَيَّ فِي رِزْقِكَ، وَ لَا تَفْتِنِّي
+                                بِالنَّظَرِ، وَ أَعِزَّنِي، وَ لَا تَبْتَلِيَنِّي بِالْكِبْرِ، وَ عَبِّدْنِي لَكَ وَ لَا
+                                تُفْسِدْ عِبَادَتِي بِالْعُجْبِ...
+                                <br><br>
+                                اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَ آلِهِ، وَ لَا تَرْفَعْنِي فِي النَّاسِ دَرَجَةً
+                                إِلَّا حَطَطْتَنِي عِنْدَ نَفْسِي مِثْلَهَا، وَ لَا تُحْدِثْ لِي عِزّاً ظَاهِراً إِلَّا
+                                أَحْدَثْتَ لِي ذِلَّةً بَاطِنَةً عِنْدَ نَفْسِي بِقَدَرِهَا.
+                                <br><br>
+                                اللَّهُمَّ لَا تَدَعْ خَصْلَةً تُعَابُ مِنِّي إِلَّا أَصْلَحْتَهَا، وَ لَا عَائِبَةً
+                                أُؤَنَّبُ بِهَا إِلَّا حَسَّنْتَهَا، وَ لَا أُكْرُومَةً فِيَّ نَاقِصَةً إِلَّا
+                                أَتْمَمْتَهَا.
+                                <br><br>
+                                اللَّهُمَّ حَلِّنِي بِحِلْيَةِ الصَّالِحِينَ، وَ أَلْبِسْنِي زِينَةَ الْمُتَّقِينَ فِي
+                                بَسْطِ الْعَدْلِ، وَ كَظْمِ الْغَيْظِ، وَ إِطْفَاءِ النَّائِرَةِ، وَ ضَمِّ أَهْلِ
+                                الْفُرْقَةِ، وَ إِصْلَاحِ ذَاتِ الْبَيْنِ، وَ إِفْشَاءِ الْعَارِفَةِ، وَ سَتْرِ
+                                الْعَائِبَةِ، وَ لِينِ الْعَرِيكَةِ، وَ خَفْضِ الْجَنَاحِ، وَ حُسْنِ الْمُعَاشَرَةِ.
+                            </p>
+                            <button class="btn-primary" style="margin-top: 20px;">إخفاء النص</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 15. Dua Al-Jowshan Al-Kabir -->
+            <section class="content-step glass">
+                <label class="checkbox-container">
+                    <input type="checkbox" data-id="dua-jowshan">
+                    <span class="checkmark"></span>
+                    <h2 class="section-title-alt">15. دعاء الجوشن الكبير</h2>
+                </label>
+                <div class="video-embed">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/MEbnod74S1E"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="dua-box glass">
+                    <div id="jowshan-wrapper" class="truncation-wrapper"
+                        onclick="toggleContent('jowshan-full', 'jowshan-preview', this)">
+                        <div id="jowshan-preview" class="dua-text dua-preview">
+                            اَللَّهُمَّ إِنِّي أَسْأَلُكَ بِاسْمِكَ، يَا أَللهُ، يَا رَحْمَنُ، يَا رَحِيمُ، يَا كَرِيمُ،
+                            يَا مُقِيمُ، يَا عَظِيمُ، يَا قَدِيمُ، يَا عَلِيمُ، يَا حَلِيمُ، يَا حَكِيمُ...
+                            <span class="read-more-link">إقرأ المزيد</span>
+                        </div>
+                        <div id="jowshan-full" class="surah-full-text hidden mt-3">
+                            <p class="dua-text small text-right">
+                                <strong>المقطع الأول:</strong>
+                                <br>
+                                اَللَّهُمَّ إِنِّي أَسْأَلُكَ بِاسْمِكَ، يَا أَللهُ، يَا رَحْمَنُ، يَا رَحِيمُ، يَا
+                                كَرِيمُ، يَا مُقِيمُ، يَا عَظِيمُ، يَا قَدِيمُ، يَا عَلِيمُ، يَا حَلِيمُ، يَا حَكِيمُ.
+                                <br>
+                                سُبْحَانَكَ يَا لَا إِلَهَ إِلَّا أَنْتَ، الْغَوْثَ الْغَوْثَ الْغَوْثَ، صَلِّ عَلَى
+                                مُحَمَّدٍ وَآلِهِ خَلِّصْنَا مِنَ النَّارِ يَا رَبِّ.
+                                <br><br>
+                                <strong>المقطع الثاني:</strong>
+                                <br>
+                                يَا سَيِّدَ السَّاداتِ، يَا مُجِيبَ الدَّعَوَاتِ، يَا رَافِعَ الدَّرَجَاتِ، يَا وَلِيَّ
+                                الْحَسَنَاتِ، يَا غَافِرَ الْخَطِيئَاتِ، يَا مُعْطِيَ الْمَسْأَلاتِ، يَا قَابِلَ
+                                التَّوْبَاتِ، يَا سَامِعَ الأَصْوَاتِ، يَا عَالِمَ الْخَفِيَّاتِ، يَا دَافِعَ
+                                الْبَلِيَّاتِ.
+                                <br>
+                                سُبْحَانَكَ يَا لَا إِلَهَ إِلَّا أَنْتَ، الْغَوْثَ الْغَوْثَ الْغَوْثَ، صَلِّ عَلَى
+                                مُحَمَّدٍ وَآلِهِ خَلِّصْنَا مِنَ النَّارِ يَا رَبِّ.
+                                <br><br>
+                                <strong>المقطع الثالث:</strong>
+                                <br>
+                                يَا خَيْرَ الْغَافِرِينَ، يَا خَيْرَ الْفَاتِحِينَ، يَا خَيْرَ النَّاصِرِينَ، يَا خَيْرَ
+                                الْحَاكِمِينَ، يَا خَيْرَ الرَّازِقِينَ، يَا خَيْرَ الْوَارِثِينَ، يَا خَيْرَ
+                                الْحَامِدِينَ، يَا خَيْرَ الذَّاكِرِينَ، يَا خَيْرَ الْمُنْزِلِينَ، يَا خَيْرَ
+                                الْمُحْسِنِينَ.
+                                <br>
+                                سُبْحَانَكَ يَا لَا إِلَهَ إِلَّا أَنْتَ، الْغَوْثَ الْغَوْثَ الْغَوْثَ، صَلِّ عَلَى
+                                مُحَمَّدٍ وَآلِهِ خَلِّصْنَا مِنَ النَّارِ يَا رَبِّ.
+                                <br><br>
+                                ... (يستمر الدعاء بـ 100 مقطع مبارك)
+                            </p>
+                            <button class="btn-primary" style="margin-top: 20px;">إخفاء النص</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="closing-message fade-in" style="text-align: center; margin: 40px auto; padding-bottom: 40px;">
+            <p class="dua-text" style="font-size: 1.6rem; color: var(--gold); text-shadow: 0 2px 4px rgba(0,0,0,0.5);">
+                تقبل الله منا ومنكم صالح الأعمال ولا تنسونا من دعائكم
+            </p>
+        </div>
+    </main>
+
+    <button id="goToTop" class="glass" onclick="window.scrollTo(0,0)">↑</button>
+
+    <footer id="footer">
+        <center>
+            <p>تقبل الله طاعاتكم | ليلة 23 رمضان</p>
+        </center>
+    </footer>
+
+    <script src="assets/js/main.js?v=1.1"></script>
+</body>
+
+</html>
